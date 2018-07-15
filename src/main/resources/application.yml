@@ -1,0 +1,12 @@
+spring:
+  profiles: testQivos
+name: testQivosYAML
+environment: test
+genderApiConf:
+  baseUrl: https://gender-api.com
+  nameOnlyReq: /get
+  apiKey: hTYoDhotyWJmDJjDRs
+helperWSConf:
+  baseUrl: http://localhost:8081
+  numberizer: /Numberizer
+  numMatcher: /NumMatcher
