@@ -46,8 +46,10 @@ public class PerfectMatcher {
 		
 		String gender = "";
 		try {
+			String url = myConfig.getGenderApiConf().getBaseUrl() + myConfig.getGenderApiConf().getNameOnlyReq()
+			       	+ "?key=" + myConfig.getGenderApiConf().getApiKey() + "&name=";
 			GenderApi checkName = restTemplate.getForObject(
-				"http://localhost/test_gender_api_christos.json", GenderApi.class);
+				url + name, GenderApi.class);
 			gender = checkName.getGender();
 		} catch (Exception ex) {
 			logger.info("Could not reach GenderAPI to validate name");
