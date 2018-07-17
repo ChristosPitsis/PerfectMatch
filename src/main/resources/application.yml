@@ -10,3 +10,18 @@ helperWSConf:
   baseUrl: http://localhost:8081
   numberizer: /Numberizer
   numMatcher: /NumMatcher
+
+---
+
+spring:
+  profiles: dockerTest
+name: dockerTestYAML
+environment: docker
+genderApiConf:
+  baseUrl: https://gender-api.com
+  nameOnlyReq: /get
+  apiKey: hTYoDhotyWJmDJjDRs
+helperWSConf:
+  baseUrl: dockernet:8081
+  numberizer: /Numberizer
+  numMatcher: /NumMatcher

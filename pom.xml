@@ -68,6 +68,10 @@
 					<executable>true</executable>
 					<layout>JAR</layout>
 					<finalName>PerfectMatch</finalName>
+					<profiles>
+						<profile>testQivos</profile>
+						<profile>dockerTest</profile>
+					</profiles>
 				</configuration>
 			</plugin>
 		</plugins>
