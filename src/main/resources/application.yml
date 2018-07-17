@@ -22,6 +22,6 @@ genderApiConf:
   nameOnlyReq: /get
   apiKey: hTYoDhotyWJmDJjDRs
 helperWSConf:
-  baseUrl: cp_perfectmatchhelper_nodejs:8081
+  baseUrl: cp-perfectmatchhelper-nodejs:8081
   numberizer: /Numberizer
   numMatcher: /NumMatcher
